@@ -1,9 +1,7 @@
 #include<stdio.h>
 #include<ctype.h>
-
 char stack[100];
 int top = -1;
-
 void push(char x)
 {
     stack[++top] = x;
@@ -53,8 +51,7 @@ int main()
             push(*e);
         }
         e++;
-    }
-    
+    }  
     while(top != -1)
     {
         printf("%c ",pop());
